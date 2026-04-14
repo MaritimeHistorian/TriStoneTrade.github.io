@@ -239,20 +239,6 @@ nav .container {
   margin-bottom: 1.5rem;
 }
 
-/* ---------- Professional bridge ---------- */
-.professional-bridge {
-  background-color: #eef3f7;
-  border-top: 1px solid #c8d8e4;
-  border-bottom: 1px solid #c8d8e4;
-}
-
-.professional-bridge blockquote {
-  border-left: 4px solid var(--ocean);
-  padding-left: 1.5rem;
-  color: var(--text);
-  font-size: 1.05rem;
-}
-
 /* ---------- CTA / closing ---------- */
 .cta-section {
   text-align: center;
@@ -468,4 +454,147 @@ footer a:hover {
   nav .container { flex-direction: column; gap: 0.75rem; align-items: flex-start; }
   .focus-grid { grid-template-columns: 1fr; }
   footer .container { flex-direction: column; align-items: flex-start; }
+}
+
+/* ---------- Centered container variant ---------- */
+.container--centered {
+  text-align: center;
+}
+
+.container--centered h2 {
+  text-align: center;
+}
+
+/* ---------- Featured video hero (top of landing page) ---------- */
+.featured-video--hero {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding-block: 3rem;
+}
+
+.video-card--hero {
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: left;
+}
+
+/* ---------- Sticky Let's Chat button ---------- */
+.lets-chat-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  background-color: var(--sand);
+  color: var(--navy);
+  padding: 0.75rem 1.5rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  font-family: "Georgia", serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  transition: background-color 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.lets-chat-btn:hover {
+  background-color: var(--ocean);
+  color: var(--white);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.22);
+  text-decoration: none;
+}
+
+/* ---------- Timeline ---------- */
+.timeline-section {
+  background-color: var(--light-bg);
+}
+
+.timeline-intro {
+  font-size: 1.05rem;
+  color: var(--text);
+  max-width: 720px;
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.6rem;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  width: 2px;
+  background-color: var(--sand);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2.5rem;
+  top: 0.4rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background-color: var(--sand);
+  border: 3px solid var(--white);
+  box-shadow: 0 0 0 2px var(--sand);
+}
+
+.timeline-item--ongoing .timeline-marker {
+  background-color: var(--ocean);
+  box-shadow: 0 0 0 2px var(--ocean);
+}
+
+.timeline-content {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--sand);
+  padding: 1.5rem 1.75rem;
+}
+
+.timeline-item--ongoing .timeline-content {
+  border-left-color: var(--ocean);
+}
+
+.timeline-date {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ocean);
+  margin-bottom: 0.4rem;
+}
+
+.timeline-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .lets-chat-btn {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.6rem 1.1rem;
+    font-size: 0.8rem;
+  }
 }
