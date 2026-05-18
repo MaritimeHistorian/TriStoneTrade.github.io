@@ -216,6 +216,7 @@ nav .container {
   border: 1px solid var(--border);
   border-left: 4px solid var(--sand);
   padding: 1.75rem 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .book-info h3 {
