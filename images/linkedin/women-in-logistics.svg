@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Women in Logistics preview</title>
+  <desc id="desc">Decorative preview image for the Women in Logistics LinkedIn post.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2e45" />
+      <stop offset="100%" stop-color="#2b5f75" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)" />
+  <circle cx="235" cy="160" r="118" fill="#c9a96e" opacity="0.22" />
+  <circle cx="960" cy="520" r="154" fill="#ffffff" opacity="0.12" />
+  <rect x="90" y="92" width="1020" height="491" rx="28" fill="#ffffff" opacity="0.1" />
+  <text x="110" y="220" fill="#c9a96e" font-family="Georgia, serif" font-size="42" letter-spacing="7">LINKEDIN POST</text>
+  <text x="110" y="340" fill="#ffffff" font-family="Georgia, serif" font-size="76" font-weight="700">Women in Logistics</text>
+  <text x="110" y="420" fill="#f8f6f1" font-family="Georgia, serif" font-size="34">Industry leadership, oral history, and archival research</text>
+  <line x1="110" y1="470" x2="470" y2="470" stroke="#c9a96e" stroke-width="6" />
+  <text x="110" y="538" fill="#ffffff" font-family="Georgia, serif" font-size="30">Tri-Stone Trade Publications</text>
+</svg>
