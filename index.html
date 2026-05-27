@@ -7,6 +7,7 @@
   <title>Tri-Stone Trade Publications</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <script src="nav.js" defer></script>
 </head>
 <body>
 
@@ -14,13 +15,25 @@
   <nav>
     <div class="container">
       <span class="nav-logo">Tri-Stone Trade</span>
-      <ul class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-links" id="primary-navigation">
         <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="writing.html">Media</a></li>
         <li><a href="engagement.html">Engagement</a></li>
         <li><a href="timeline.html">Timeline</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
+      <div class="nav-search">
+        <form action="https://www.google.com/search" method="get" role="search">
+          <label class="sr-only" for="site-search">Search this site</label>
+          <input id="site-search" name="q" type="search" placeholder="Search" />
+          <input type="hidden" name="as_sitesearch" value="tristonetrade.com" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
     </div>
   </nav>
 
