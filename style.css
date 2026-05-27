@@ -31,6 +31,7 @@ body {
   --text:      #2c2c2c;
   --muted:     #5a5a5a;
   --white:     #ffffff;
+  --nav-toggle-size: 2.5rem;
 }
 
 /* ---------- Typography ---------- */
@@ -110,8 +111,8 @@ nav .container {
   display: none;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: var(--nav-toggle-size);
+  height: var(--nav-toggle-size);
   border: 1px solid #ccd8e0;
   background: transparent;
   color: #ccd8e0;
@@ -631,7 +632,8 @@ footer a:hover {
   }
   .nav-search {
     margin-left: 0;
-    width: calc(100% - 3.25rem);
+    flex: 1 1 0;
+    min-width: 0;
     max-width: 12rem;
   }
   .nav-search form {

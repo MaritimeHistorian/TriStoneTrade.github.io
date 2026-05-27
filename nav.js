@@ -1,4 +1,6 @@
 (() => {
+  const DESKTOP_BREAKPOINT = 641;
+  const RESIZE_DEBOUNCE_MS = 100;
   const toggle = document.querySelector(".nav-toggle");
   const menu = document.querySelector(".nav-links");
 
@@ -17,9 +19,13 @@
     menu.classList.toggle("is-open", !isOpen);
   });
 
+  let resizeTimer;
   window.addEventListener("resize", () => {
-    if (window.matchMedia("(min-width: 641px)").matches) {
-      closeMenu();
-    }
+    clearTimeout(resizeTimer);
+    resizeTimer = window.setTimeout(() => {
+      if (window.matchMedia(`(min-width: ${DESKTOP_BREAKPOINT}px)`).matches) {
+        closeMenu();
+      }
+    }, RESIZE_DEBOUNCE_MS);
   });
 })();
