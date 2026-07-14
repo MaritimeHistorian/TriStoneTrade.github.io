@@ -628,6 +628,28 @@ footer a:hover {
   text-decoration: none;
 }
 
+/* ---------- Newsletter section ---------- */
+.newsletter-section {
+  background-color: var(--light-bg);
+  padding: 4rem 0;
+}
+
+.newsletter-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.newsletter-section p {
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.newsletter-section .hs-form-frame {
+  max-width: 560px;
+  margin-inline: auto;
+}
+
 /* ---------- Timeline ---------- */
 .timeline-section {
   background-color: var(--light-bg);
