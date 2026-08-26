@@ -635,16 +635,18 @@ footer a:hover {
 }
 
 .linkedin-btn {
+  --linkedin-icon-size: 1.5rem;
+  --linkedin-icon-padding: 0.75rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem;
-  min-width: calc(1.5rem + 1.5rem);
+  padding: var(--linkedin-icon-padding);
+  min-width: calc(var(--linkedin-icon-size) + (var(--linkedin-icon-padding) * 2));
 }
 
 .linkedin-icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: var(--linkedin-icon-size);
+  height: var(--linkedin-icon-size);
   fill: currentColor;
   display: block;
 }
@@ -768,12 +770,7 @@ footer a:hover {
   }
 
   .linkedin-btn {
-    padding: 0.6rem;
-    min-width: calc(1.3rem + 1.2rem);
-  }
-
-  .linkedin-icon {
-    width: 1.3rem;
-    height: 1.3rem;
+    --linkedin-icon-size: 1.3rem;
+    --linkedin-icon-padding: 0.6rem;
   }
 }
