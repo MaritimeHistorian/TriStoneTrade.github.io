@@ -635,6 +635,21 @@ footer a:hover {
   text-decoration: none;
 }
 
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  min-width: 3rem;
+}
+
+.linkedin-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+  display: block;
+}
+
 /* ---------- Newsletter section ---------- */
 .newsletter-section {
   background-color: var(--light-bg);
@@ -743,10 +758,23 @@ footer a:hover {
 }
 
 @media (max-width: 640px) {
-  .lets-chat-btn {
+  .sticky-cta-group {
     bottom: 1rem;
     right: 1rem;
+  }
+
+  .lets-chat-btn {
     padding: 0.6rem 1.1rem;
     font-size: 0.8rem;
+  }
+
+  .linkedin-btn {
+    padding: 0.6rem;
+    min-width: 2.8rem;
+  }
+
+  .linkedin-icon {
+    width: 1.3rem;
+    height: 1.3rem;
   }
 }
