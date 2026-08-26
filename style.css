@@ -601,12 +601,18 @@ footer a:hover {
   text-align: left;
 }
 
-/* ---------- Sticky Let's Chat button ---------- */
-.lets-chat-btn {
+/* ---------- Sticky CTA buttons ---------- */
+.sticky-cta-group {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
   z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.lets-chat-btn {
   background-color: var(--sand);
   color: var(--navy);
   padding: 0.75rem 1.5rem;
@@ -626,6 +632,15 @@ footer a:hover {
   color: var(--white);
   box-shadow: 0 6px 20px rgba(0,0,0,0.22);
   text-decoration: none;
+}
+
+.lets-chat-btn--linkedin {
+  background-color: var(--ocean);
+  color: var(--white);
+}
+
+.lets-chat-btn--linkedin:hover {
+  background-color: var(--navy);
 }
 
 /* ---------- Newsletter section ---------- */
@@ -736,9 +751,13 @@ footer a:hover {
 }
 
 @media (max-width: 640px) {
-  .lets-chat-btn {
+  .sticky-cta-group {
     bottom: 1rem;
     right: 1rem;
+    gap: 0.5rem;
+  }
+
+  .lets-chat-btn {
     padding: 0.6rem 1.1rem;
     font-size: 0.8rem;
   }
