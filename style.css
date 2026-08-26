@@ -641,6 +641,7 @@ footer a:hover {
 
 .lets-chat-btn--linkedin:hover {
   background-color: var(--navy);
+  color: var(--white);
 }
 
 /* ---------- Newsletter section ---------- */
