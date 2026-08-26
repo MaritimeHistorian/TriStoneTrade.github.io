@@ -601,12 +601,19 @@ footer a:hover {
   text-align: left;
 }
 
-/* ---------- Sticky Let's Chat button ---------- */
-.lets-chat-btn {
+/* ---------- Sticky CTA buttons ---------- */
+.sticky-cta-group {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
   z-index: 999;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.lets-chat-btn {
   background-color: var(--sand);
   color: var(--navy);
   padding: 0.75rem 1.5rem;
