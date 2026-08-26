@@ -601,12 +601,18 @@ footer a:hover {
   text-align: left;
 }
 
-/* ---------- Sticky Let's Chat button ---------- */
-.lets-chat-btn {
+/* ---------- Sticky CTA buttons ---------- */
+.sticky-cta-group {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
   z-index: 999;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.lets-chat-btn {
   background-color: var(--sand);
   color: var(--navy);
   padding: 0.75rem 1.5rem;
@@ -626,6 +632,23 @@ footer a:hover {
   color: var(--white);
   box-shadow: 0 6px 20px rgba(0,0,0,0.22);
   text-decoration: none;
+}
+
+.linkedin-btn {
+  --linkedin-icon-size: 1.5rem;
+  --linkedin-icon-padding: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--linkedin-icon-padding);
+  min-width: calc(var(--linkedin-icon-size) + (var(--linkedin-icon-padding) * 2));
+}
+
+.linkedin-icon {
+  width: var(--linkedin-icon-size);
+  height: var(--linkedin-icon-size);
+  fill: currentColor;
+  display: block;
 }
 
 /* ---------- Newsletter section ---------- */
@@ -736,10 +759,18 @@ footer a:hover {
 }
 
 @media (max-width: 640px) {
-  .lets-chat-btn {
+  .sticky-cta-group {
     bottom: 1rem;
     right: 1rem;
+  }
+
+  .lets-chat-btn {
     padding: 0.6rem 1.1rem;
     font-size: 0.8rem;
+  }
+
+  .linkedin-btn {
+    --linkedin-icon-size: 1.3rem;
+    --linkedin-icon-padding: 0.6rem;
   }
 }
