@@ -402,6 +402,13 @@ nav .container {
   border-bottom: 4px solid var(--sand);
 }
 
+.article-hero-img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
 .about-hero h1 {
   color: var(--white);
   font-size: 2.2rem;
