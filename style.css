@@ -499,7 +499,28 @@ nav .container {
   font-size: 1.05rem;
 }
 
+.about-photo {
+  float: right;
+  width: 260px;
+  max-width: 40%;
+  height: auto;
+  margin: 0.25rem 0 1.25rem 2rem;
+  border: 1px solid var(--border);
+  border-bottom: 4px solid var(--sand);
+}
+
+@media (max-width: 640px) {
+  .about-photo {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 1.5rem;
+  }
+}
+
 .about-content h2 {
+  clear: both;
   margin-top: 2.5rem;
   margin-bottom: 0.75rem;
   padding-bottom: 0.4rem;
