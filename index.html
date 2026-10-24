@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <script src="nav.js" defer></script>
+  <script src="carousel.js" defer></script>
   <script src="https://js-na2.hsforms.net/forms/embed/48218785.js" defer></script>
 </head>
 <body>
@@ -32,11 +33,26 @@
     </div>
   </nav>
 
+  <!-- ===== Photo Carousel ===== -->
+  <section class="carousel" aria-roledescription="carousel" aria-label="Photos from the trade floor">
+    <div class="carousel-track">
+      <figure class="carousel-slide is-active">
+        <img src="images/carousel-1.jpg" alt="Collage of floral, woven basket, model ship, and religious figurine exhibitor booths at a trade fair" />
+      </figure>
+      <figure class="carousel-slide">
+        <img src="images/carousel-2.jpg" alt="Collage of exhibitor booths, Pierce McDonnell at a trade fair, and crowds entering the exhibition hall" />
+      </figure>
+    </div>
+    <button class="carousel-btn carousel-prev" type="button" aria-label="Previous photo">&#8249;</button>
+    <button class="carousel-btn carousel-next" type="button" aria-label="Next photo">&#8250;</button>
+    <div class="carousel-dots"></div>
+  </section>
+
   <!-- ===== Hero ===== -->
   <header class="hero">
     <div class="container">
       <h1>Connecting Northern California food producers with buyers in China</h1>
-      <p class="tagline">Tri-Stone Trade helps small and mid-sized agricultural and consumer food brands find their way into the Chinese market, built on firsthand shipping experience and a deep knowledge of how Pacific trade has always worked.</p>
+      <p class="tagline">Tri-Stone Trade helps small and mid-sized agricultural and consumer food brands find their way into the Chinese market, built on firsthand shipping experience and strong cross-border partnerships.</p>
       <p><a href="producers.html" class="btn">For producers</a><a href="zh.html" class="btn btn-outline">For buyers · 中文</a></p>
     </div>
   </header>
