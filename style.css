@@ -278,6 +278,60 @@ nav .container {
   margin-bottom: 2.5rem;
 }
 
+.history-project {
+  background-color: var(--light-bg);
+}
+
+.history-project h2,
+.history-featured-articles h2 {
+  margin-bottom: 2rem;
+}
+
+.history-project .video-card:last-child {
+  margin-bottom: 0;
+}
+
+.history-featured-articles {
+  background-color: var(--white);
+}
+
+.history-article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.history-article-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--sand);
+  background-color: var(--white);
+}
+
+.history-article-image-link {
+  display: block;
+}
+
+.history-article-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.history-article-content {
+  padding: 1.5rem;
+}
+
+.history-article-content h3 {
+  margin-bottom: 0.75rem;
+}
+
+.history-article-content .btn {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
 .linkedin-preview {
   display: block;
   width: 100%;
@@ -607,6 +661,7 @@ footer a:hover {
     display: flex;
   }
   .focus-grid { grid-template-columns: 1fr; }
+  .history-article-grid { grid-template-columns: 1fr; }
   footer .container { flex-direction: column; align-items: flex-start; }
 }
 
