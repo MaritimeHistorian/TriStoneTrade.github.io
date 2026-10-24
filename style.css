@@ -167,7 +167,7 @@ nav .container {
 .hero {
   background-color: var(--navy);
   color: var(--white);
-  padding-block: 6rem 5rem;
+  padding-block: 3rem 4rem;
   border-bottom: 4px solid var(--sand);
 }
 
