@@ -282,6 +282,13 @@ nav .container {
   background-color: var(--light-bg);
 }
 
+.ciie-logo {
+  display: block;
+  width: min(100%, 420px);
+  height: auto;
+  margin-top: 1.5rem;
+}
+
 .history-project h2,
 .history-featured-articles h2 {
   margin-bottom: 2rem;
