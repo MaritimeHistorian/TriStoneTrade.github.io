@@ -878,6 +878,10 @@ footer a:hover {
   background-color: var(--light-bg);
 }
 
+.producer-list {
+  padding-left: 1.5rem;
+}
+
 .timeline-intro {
   font-size: 1.05rem;
   color: var(--text);
