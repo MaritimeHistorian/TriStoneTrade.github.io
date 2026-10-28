@@ -868,6 +868,14 @@ footer a:hover {
   color: var(--text);
 }
 
+.ciie-section p {
+  margin-bottom: 0;
+}
+
+.ciie-section .ciie-logo {
+  margin-bottom: 0.4rem;
+}
+
 .newsletter-section .hs-form-frame {
   max-width: 560px;
   margin-inline: auto;
