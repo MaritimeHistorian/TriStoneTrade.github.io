@@ -586,6 +586,14 @@ nav .container {
   display: block;
 }
 
+.producer-hero-img {
+  float: right;
+  width: 260px;
+  max-width: 40%;
+  height: auto;
+  margin: 0.25rem 0 1.25rem 2rem;
+}
+
 .about-hero h1 {
   color: var(--white);
   font-size: 2.2rem;
