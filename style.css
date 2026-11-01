@@ -348,6 +348,22 @@ nav .container {
   margin-bottom: 1.5rem;
 }
 
+.book-card--horizontal {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.book-card--horizontal .linkedin-preview {
+  flex: 0 0 240px;
+  margin-bottom: 0;
+}
+
+.book-card--horizontal .book-info {
+  flex: 1;
+  min-width: 0;
+}
+
 /* ---------- CTA / closing ---------- */
 .cta-section {
   text-align: center;
@@ -766,6 +782,15 @@ footer a:hover {
 }
 
 @media (max-width: 640px) {
+  .book-card--horizontal {
+    flex-direction: column;
+  }
+
+  .book-card--horizontal .linkedin-preview {
+    flex-basis: auto;
+    max-width: 100%;
+  }
+
   .sticky-cta-group {
     bottom: 1rem;
     right: 1rem;
