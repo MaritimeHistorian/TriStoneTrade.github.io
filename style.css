@@ -475,6 +475,59 @@ nav .container {
   color: var(--navy);
 }
 
+/* ---------- Producer banner ---------- */
+.producer-banner {
+  background-color: var(--navy);
+  color: var(--white);
+  padding-block: 4rem;
+}
+
+.producer-banner__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.producer-banner__label {
+  grid-column: 1 / -1;
+  justify-self: end;
+  margin-bottom: 0;
+  color: #b8c8d4;
+  font: 0.8rem/1.4 Arial, sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.producer-banner__copy h1 {
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.producer-banner__copy p {
+  max-width: 700px;
+  margin-bottom: 0;
+  color: #b8c8d4;
+  font-family: Arial, sans-serif;
+}
+
+.producer-banner__inner > img {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  justify-self: end;
+}
+
+.about-hero h2 {
+  color: var(--white);
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
 /* ---------- Photo carousel ---------- */
 .carousel {
   position: relative;
@@ -777,6 +830,24 @@ footer a:hover {
   .focus-grid { grid-template-columns: 1fr; }
   .history-article-grid { grid-template-columns: 1fr; }
   footer .container { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 767px) {
+  .producer-banner {
+    padding-block: 3rem;
+  }
+  .producer-banner__inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    padding-inline: 16px;
+  }
+  .producer-banner__label {
+    justify-self: end;
+  }
+  .producer-banner__inner > img {
+    width: min(100%, 360px);
+    justify-self: center;
+  }
 }
 
 /* ---------- Centered container variant ---------- */
