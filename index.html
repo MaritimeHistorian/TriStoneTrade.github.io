@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Tri-Stone Trade Publications — exploring trade in the Pacific world through history and lived experience. A personal project by Pierce McDonnell centered on his work with the Pacific Transportation Association." />
-  <title>Tri-Stone Trade Publications</title>
+  <meta name="description" content="Tri-Stone Trade connects Northern California agricultural and food brands with buyers in China, drawing on a century of Pacific trade history and firsthand shipping experience." />
+  <meta property="og:title" content="Tri-Stone Trade | Northern California Food to China" />
+  <meta property="og:description" content="Tri-Stone Trade connects Northern California agricultural and food brands with buyers in China, drawing on a century of Pacific trade history and firsthand shipping experience." />
+  <title>Tri-Stone Trade | Northern California Food to China</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <script src="nav.js" defer></script>
+  <script src="carousel.js" defer></script>
   <script src="https://js-na2.hsforms.net/forms/embed/48218785.js" defer></script>
 </head>
 <body>
@@ -15,86 +18,81 @@
   <!-- ===== Navigation ===== -->
   <nav>
     <div class="container">
-      <span class="nav-logo">Tri-Stone Trade</span>
+      <span class="nav-logo">Tri-Stone Trade 硕果磊磊</span>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
         <span class="sr-only">Toggle navigation menu</span>
         <span class="nav-toggle-icon" aria-hidden="true"></span>
       </button>
       <ul class="nav-links" id="primary-navigation">
         <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="writing.html">Media</a></li>
-        <li><a href="history.html">History</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="producers.html">Join the Table</a></li>
+        <li><a href="why-california.html">Why California</a></li>
+        <li><a href="steamship-night.html">Steamship Night</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- ===== Photo Carousel ===== -->
+  <section class="carousel" aria-roledescription="carousel" aria-label="Photos from the trade floor">
+    <div class="carousel-track">
+      <figure class="carousel-slide is-active">
+        <img src="images/carousel-0.jpg" alt="Pierce McDonnell sharing a hotpot dinner with colleagues in China" />
+      </figure>
+      <figure class="carousel-slide">
+        <img src="images/carousel-1.jpg" alt="Collage of floral, woven basket, model ship, and religious figurine exhibitor booths at a trade fair" />
+      </figure>
+      <figure class="carousel-slide">
+        <img src="images/carousel-2.jpg" alt="Collage of exhibitor booths, Pierce McDonnell at a trade fair, and crowds entering the exhibition hall" />
+      </figure>
+      <figure class="carousel-slide">
+        <img src="images/carousel-3.jpg" alt="Crowded banquet hall with guests seated at round tables under blue lighting" />
+      </figure>
+    </div>
+    <button class="carousel-btn carousel-prev" type="button" aria-label="Previous photo">&#8249;</button>
+    <button class="carousel-btn carousel-next" type="button" aria-label="Next photo">&#8250;</button>
+    <div class="carousel-dots"></div>
+  </section>
+
   <!-- ===== Hero ===== -->
   <header class="hero">
     <div class="container">
-      <h1>Tri-Stone Trade Publications</h1>
-      <p class="tagline">Exploring trade in the Pacific world through history and lived experience</p>
-      <p class="hero-body">
-      Tri-Stone Trade Publications explores the culture, history, and community of the global transportation industry, 
-        with a focus on the networks connecting Northern California with markets across the Pacific. Current work 
-        examines the evolution of international trade, from the Port of Oakland’s leading agricultural exports to 
-        San Francisco’s modern AI tech economy, bringing historical research and firsthand industry perspectives 
-        together to understand how the Bay Area connects with the world.
-        
-      </p>
+      <h1>Connecting Across the Table</h1>
+      <p class="tagline"><em>We believe that the Pacific runs on relationships forged across the dinner table and over a glass of wine.</em> California grows and makes some of the best food in the world. Tri-Stone Trade helps small and mid-sized agricultural and consumer food brands find their way into the Chinese market, built on strong cross-border partnerships.</p>
+      <p><a href="producers.html" class="btn">Join the Table</a></p>
     </div>
   </header>
 
   <main>
 
-    <!-- ===== Newsletter Form ===== -->
+    <section class="newsletter-section ciie-section">
+      <div class="container container--centered">
+        <h2>Meet Us in Shanghai</h2>
+        <p>We'll be meeting buyers at the China International Import Expo. If you're a Northern California producer curious about going global, let's get in touch.</p>
+        <img class="ciie-logo" src="images/ciie-logo.png" alt="China International Import Expo (CIIE)" />
+        <a href="mailto:pierce@tristonetrade.com?subject=China%20market%20inquiry" class="btn">Get in touch</a>
+      </div>
+    </section>
+
     <section class="newsletter-section" id="newsletter">
       <div class="container container--centered">
         <div class="hs-form-frame" data-region="na2" data-form-id="0ff933c6-59ec-421d-8de9-316f0da4a8ee" data-portal-id="48218785"></div>
       </div>
     </section>
 
-    <!-- ===== Featured Video ===== -->
-    <section class="featured-video featured-video--hero">
-      <div class="container container--centered">
-        <h2>Featured Video</h2>
-        <div class="video-card video-card--hero">
-          <h3>Pacific Transportation Association: History Invite</h3>
-          <div class="video-embed">
-            <iframe
-              src="https://www.youtube.com/embed/Ihe7FxZNGro"
-              title="Pacific Transportation Association: History Invite"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy"
-            ></iframe>
-          </div>
-          <p>
-            And as I work on this project in the coming months, your input whether it
-            be an email or a conversation can help shape this project for our industry
-            community. If you'd like to share your memories, insights, or even source
-            materials, please reach out to me.
-            <a href="mailto:pierce@tristonetrade.com">pierce@tristonetrade.com</a>
-          </p>
-          <a href="writing.html" class="btn">View Media</a>
-        </div>
-      </div>
-    </section>
-
-
   </main>
 
   <!-- ===== Footer ===== -->
   <footer>
     <div class="container">
-      <span>&copy; 2026 Tri-Stone Trade Publications</span>
+      <span>&copy; 2026 Tri-Stone Trade</span>
+      <span><a href="mailto:pierce@tristonetrade.com">pierce@tristonetrade.com</a></span>
       <span><a href="https://tristonetrade.com">tristonetrade.com</a></span>
     </div>
   </footer>
   <!-- ===== Sticky CTA Buttons ===== -->
   <div class="sticky-cta-group">
     <a href="#newsletter" class="lets-chat-btn" aria-label="Our Newsletter — sign up">Our Newsletter</a>
-    <a href="https://www.linkedin.com/company/tri-stone-trade/" class="lets-chat-btn linkedin-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — visit Tri-Stone Trade Publications">
+    <a href="https://www.linkedin.com/company/tri-stone-trade/" class="lets-chat-btn linkedin-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — visit Tri-Stone Trade">
       <svg class="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.34 10.27H5.67V18.3H8.34V10.27ZM7 5.99A1.55 1.55 0 0 0 5.45 7.54C5.45 8.4 6.13 9.09 7 9.09C7.84 9.09 8.53 8.4 8.53 7.54A1.56 1.56 0 0 0 7 5.99ZM18.32 13.39C18.32 10.97 16.78 10.08 15.35 10.08C14.19 10.08 13.67 10.72 13.38 11.17V10.27H10.82L10.85 18.3H13.41V13.82C13.41 13.58 13.43 13.35 13.5 13.18C13.69 12.71 14.12 12.22 14.84 12.22C15.78 12.22 16.16 12.93 16.16 13.98V18.3H18.72V13.39H18.32Z"></path>
       </svg>
